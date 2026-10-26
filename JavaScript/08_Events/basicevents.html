@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Html events</title>
+</head>
+<body>
+  <div class="image-list-container">
+    <h2>My Favorite Images</h2>
+    <ul class="image-list">
+      <li>
+        <img id="img1" src="https://images.pexels.com/photos/3944960/pexels-photo-3944960.jpeg" alt="Mountain Landscape">
+        <p>Mountain Landscape</p>
+      </li>
+      <li>
+        <img id="img2" src="https://images.pexels.com/photos/2398220/pexels-photo-2398220.jpeg" alt="Ocean Beach">
+        <p>Ocean Beach</p>
+      </li>
+      <li>
+        <img id="img3" src="https://images.pexels.com/photos/1624487/pexels-photo-1624487.jpeg" alt="Forest Path">
+        <p>Forest Path</p>
+      </li>
+      <li>
+        <img id="img4" src="https://images.pexels.com/photos/355747/pexels-photo-355747.jpeg" alt="Sunset Sky">
+        <p>Sunset Sky</p>
+      </li>
+    </ul>
+  </div>
+
+  <style>
+    body {
+      background-color: black;
+      color: white;
+    }
+
+    .image-list-container {
+      padding: 20px;
+      max-width: 800px;
+    }
+
+    .image-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .image-list li {
+      text-align: center;
+    }
+
+    .image-list img {
+      width: 200px;
+      height: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-list img:hover {
+      transform: scale(1.05);
+      transition: 0.3s ease;
+    }
+  </style>
+</body>
+<script>
+
+</script>
+</html>
